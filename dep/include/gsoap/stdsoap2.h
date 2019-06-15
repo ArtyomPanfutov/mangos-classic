@@ -1482,7 +1482,7 @@ extern "C" {
 
 #ifndef soap_isnan
 # ifdef HAVE_ISNAN
-#  define soap_isnan(n) isnan(n)
+#  define soap_isnan(n) std::isnan(n)
 # else
 #  define soap_isnan(n) ((n) != (n))
 # endif
@@ -1490,7 +1490,7 @@ extern "C" {
 
 #ifndef soap_isinf
 # ifdef HAVE_ISINF
-#  define soap_isinf(n) isinf(n)
+#  define soap_isinf(n) std::isinf(n)
 # else
 #  define soap_isinf(n) (!soap_isnan(n) && soap_isnan((n) - (n)))
 # endif
