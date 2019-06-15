@@ -21,6 +21,7 @@
 #ifndef _DATABASEMYSQL_H
 #define _DATABASEMYSQL_H
 
+#include "../../../dep/lib/include/mysql/my_global.h"
 //#include "Common.h"
 #include "Database.h"
 #include "Policies/Singleton.h"
